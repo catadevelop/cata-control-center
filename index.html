@@ -68,15 +68,12 @@
   <script>
     $(document).ready(function() {
       var docURL = window.location.href ;
-      var re = new RegExp('console.catamona.tw/?');
+      var re = new RegExp('tech-console.catamona.tw/?');
       var match = docURL.match(re);
       if ( match ){
         var iframesrc = 
         'https://script.google.com/macros/s/' +
-        'AKfycbzm1BNPJiq1Txb6W0Th82Lx0ihmbNsqcU3RoxEyTjxbFgG9Y-vjlV5el4DozvyZ4L1s/exec?' ;
-        //+
-        //'queryHash=' + match[1] ;
-
+        'AKfycbypMq7lY1olNk4JmSCu-yUQ-iz0phir5PiVHNqVZTrSRuPBIunrTGvj-zOi-wFhTI_3Tg/exec' ;
         $('<iframe />');  // Create an iframe element
         $('<iframe />', {
             name: 'frameTicket',
